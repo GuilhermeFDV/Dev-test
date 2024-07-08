@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset-mobile.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/mini-portfolio.js"></script>
+    <title>Dev Teste</title>
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <div class="banner-wrapper"><!--Banner principal-->
+                <span id="banner"></span>
+                <div id="banner-items" syle="margin: 0;">
+                    <h1 id="banner-title">Lorem ipsum</h1>
+                    <h3 id="banner-subtitle">Lorem ipsum dolor sit</h3>
+                    <a href="#" class="button header-button" id="banner-button">Saiba mais</a>
+                </div>
+
+            </div>
+            <div class="navbar-wrapper"><!--Barra de navegação-->
+                <nav id="navbar">
+                    <div class="logo-wrapper">
+                        <a href="/" class="logo-link" id="logo"></a>
+                    </div>
+                    <ul class="menu" id="menu">
+                        <li class="menu menu-item"><a href="#about" class="menu-link">Sobre</a></li>
+                        <li class="menu menu-item"><a href="#portfolio" class="menu-link">Portfólio</a></li>
+                        <li class="menu menu-item"><a href="#testimonials" class="menu-link">Depoimentos</a></li>
+                        <li class="menu menu-item"><a href="#contact" class="menu-link">Contato</a></li>
+                    </ul>
+                    <div class="display">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="about" class="section-wrapper"><!--Seção-Sobre-->
+            <h2 class="section-title">Sobre</h2>
+            <div class="section-about" id="section-about1">
+                <div class="image-about-container" id="image-about1"></div>
+                <div class="text-container" id="text-container1">
+                    <p class="section-text" id="text1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis sollicitudin velit, in
+                        lacinia dui
+                        pulvinar nec. Cras vehicula sed velit id sagittis. Aliquam vitae cursus nunc. Ut et magna
+                        pulvinar, varius
+                        odio ut, convallis diam. Etiam sapien turpis, rutrum at est at, lacinia fringilla enim. Morbi
+                        iaculis quam
+                        vel ante posuere, ac interdum leo congue. Donec feugiat augue non lorem feugiat vestibulum.
+                        Maecenas
+                        condimentum pretium massa. Nunc pharetra arcu lectus, ut volutpat dui tempor eu. In ac faucibus
+                        dui,
+                        ut suscipit risus. Praesent id hendrerit lacus, sed sagittis sapien. Fusce quis porttitor leo,
+                        sit amet
+                        dapibus tellus. Nullam fringilla varius ultrices.
+                    </p>
+                    <a class="button body-button" id="botao-about">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="section-about" id="section-about2">
+                <div class="text-container" id="text-container2">
+                    <p class="section-text" id="text2">
+                        Cras nunc magna, facilisis et leo a, tempor iaculis lectus. Nullam eleifend eu metus nec
+                        interdum. Fusce at risus lorem
+                        vulputate facilisis eget id leo.Suspendisse mollis ante et ultricies ultrices. Interdum et
+                        malesuada fames ipsum primis
+                        in faucibus. Pellentesque bibendum pellentesque posuere. Cras consequat sed metus at egestas.
+                        Vestibulum lacus ante,
+                        porta nec erat vitae, tempus consectetur arcu. Curabitur id dui sollicitudin, vestibulum enim
+                        eget, venenatisturpis. Curab
+                        sed mattis felis, sed aliquet ante. Maecenas volutpat sapien quis efficitur sollicitudin. Nulla
+                        vehicula sodales ipsum, ut
+                        faucibus nibh porttitor et.Phasellus sit amet urna faucibus augue corper scelerisque erat
+                        tristique, mollis molestie metus
+                        scelerisque erat tristique.
+                    </p>
+                </div>
+                <div class="image-about-container" id="image-about2"></div>
+            </div>
+        </section>
+        <section id="portfolio" class="section-wrapper"><!--Seção do Portfólio-->
+            <h2 class="section-title">Portfólio</h2>
+            <div class="section-about" id="container-portfolio"></div>
+            <a href="" class="button body-button" id="botao-portfolio">Carregar mais projetos</a>
+        </section>
+        <section id="testimonials" class="section-wrapper"><!--Seção dos Depoimentos-->
+            <h2 class="section-title">Depoimentos</h2>
+            <div class="section-testimonials" id="container-testimonials"></div>
+
+        </section>
+        <section id="contact" class="section-wrapper"><!--Seção de Contato-->
+            <h2 class="section-title">Contato</h2>
+            <form action="" class="section-contact">
+                <div id="first-line">
+                    <input type="text" name="Nome" id="input-name" placeholder="Nome" class="basic-data">
+                    <input type="text" name="Sobrenome" id="input-surname" placeholder="Sobrenome" class="basic-data">
+                    <input type="email" name="Email" id="input-email" placeholder="Email" class="basic-data">
+
+                </div>
+                <div id="second-line">
+                    <input type="tel" name="Telefone" id="input-tel" class="basic-data tel" placeholder="Telefone">
+                    <textarea name="Mensagem" id="input-message" cols="30" rows="10" class="basic-data area"
+                        placeholder="Mensagem"></textarea>
+                    <p id="notice">Todos os dados são guardados de
+                        forma segura, saiba mais <a href="#data-policy">aqui</a></p>
+                    <input type="submit" value="Enviar" id="btn-enviar" class="button button-submit">
+                </div>
+            </form>
+        </section>
+        <footer id="footer">
+            <div id="newsletter" class="footer-subsection"><!--Seção das Notícias-->
+                <h1 class="footer-title">Se inscreve para receber nosso newsletter</h1>
+                <form action="" id="form-newsletter">
+                    <input type="email" name="Email Newsletter" id="input-nl-email" placeholder="Email">
+                    <input type="submit" value="Inscrever-se" class="button button-submit">
+                </form>
+                <h2 class="footer-title sub">Portfólio</h2>
+                <div id="links-portfolio"></div>
+            </div>
+            <div id="site-info" class="footer-subsection">
+                <div id="footer-menus">
+                    <div id="menu-footer">
+                        <h1 class="footer-title title-menu">Menu</h1>
+                        <ul class="menu-footer">
+                            <li class="footer-menus-item"><a href="#about">Sobre</a></li>
+                            <li class="footer-menus-item"><a href="#portfolio">Portfólio</a></li>
+                            <li class="footer-menus-item"><a href="#testimonials">Depoimentos</a></li>
+                            <li class="footer-menus-item"><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div id="menu-about">
+                        <h1 class="footer-title title-menu">Sobre</h1>
+                        <ul class="menu-footer">
+                            <li class="footer-menus-item"><a href="#privacy-policy">Política de privacidade</a></li>
+                            <li class="footer-menus-item"><a href="#terms-and-conditions">Termos de uso</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span id="footer-logo">
+                    <a href="/"><img src="assets/images/vasta-white.png" alt="Logo Vasta"></a>
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
